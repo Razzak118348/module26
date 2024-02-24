@@ -1,23 +1,20 @@
-/* 
-*objective: get base and height and calculate the area by given formula
-
-
-*/
-
-
-function claculateTriangleArea(){
-   //base
-    const triangleBaseInput=document.getElementById('triangle-base');
-    const triangleBaseText=triangleBaseInput.value ;
-     const base =parseFloat(triangleBaseText);
-
-     //height
-     const triangleHeightInput=document.getElementById('triangle-height');
-     const triangleHeightText=triangleHeightInput.value;
-     const height=parseFloat(triangleHeightText);
-
-    const area=0.5*base*height;
-    console.log(area)
-
+function calculateRectangleArea(){
+     //width
+     const ractanglewidthInput=document.getElementById('rectangle-width');
+     const ractanglewidthText=ractanglewidthInput.value ;
+      const width =parseFloat(ractanglewidthText);
+ 
+      //length
+      const ractanglelengthInput=document.getElementById('rectangle-length');
+      const ractanglelengthText=ractanglelengthInput.value;
+      const length=parseFloat(ractanglelengthText);
+ 
+     const area=width*length;
+   
+     // display ractangle area 
+     const ractangleArea=document.getElementById('area-section');
+     ractangleArea.innerText=area;
     
+
+ 
 }
